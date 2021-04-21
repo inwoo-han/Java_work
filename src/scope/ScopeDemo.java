@@ -1,6 +1,6 @@
-package object;
+package scope;
 
-class Calculator {
+class Calculator2 {
 	static double PI = 3.14;
 	static int base = 0;
 	int left, right;
@@ -19,23 +19,31 @@ class Calculator {
 	}
 }
 
-public class Calculator4Demo {
+public class ScopeDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Calculator c1 = new Calculator();
+//		Calculator c1 = new Calculator();
+//		c1.setOperands(10, 20);
+//		c1.sum();
+//		c1.avg();
+//		System.out.println(c1.PI);
+//		
+//		Calculator c2 = new Calculator();
+//		c2.setOperands(20, 40);
+//		c2.sum();
+//		c2.avg();
+//		System.out.println(c2.PI);
+//		
+//		System.out.println(Calculator.PI);
+		Calculator2 c1 = new Calculator2();
 		c1.setOperands(10, 20);
 		c1.sum();
 		c1.avg();
-		System.out.println(c1.PI);
 		
-		Calculator c2 = new Calculator();
-		c2.setOperands(20, 40);
-		c2.sum();
-		c2.avg();
-		System.out.println(c2.PI);
-		
-		System.out.println(Calculator.PI);
+		Calculator2.base = 10;
+		c1.sum();
+		c1.avg();
 		
 		
 	}
