@@ -29,7 +29,7 @@ class SameClassChecker {
 	
 class SamePackageChecker extends Same{
 	public SamePackageChecker(){
-		//같은 패키지
+		//같은 패키지 +~-#
 		Same same = new Same();
 		same._public();
 		same._protected();
