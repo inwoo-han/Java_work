@@ -14,7 +14,7 @@ public class Exam4_7 {
 		for (int i = 0; i<num1; i++) {
 			System.out.print("*");
 			}
-		System.out.println("ÁÙ¹Ù²Þ");
+		System.out.println("");
 		}
 		else {
 		}
